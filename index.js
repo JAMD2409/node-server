@@ -51,13 +51,12 @@ function agregarTarea() {
       switch (opcion) {
         case '1':
           mostrarTareas();
-          mostrarMenu();
           break;
         case '2':
           agregarTarea();
           break;
         case '3':
-          eliminarTarea();
+          eliminarTareas();
           break;
         case '4':
           completarTarea();
