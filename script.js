@@ -29,5 +29,34 @@ function agregar() {
     }
   }
 
+  function menu() {
+    while (true) {
+      console.log('\nOpciones:');
+      console.log('1. Añadir tarea');
+      console.log('2. Eliminar tarea');
+      console.log('3. Completar tarea');
+      console.log('4. Mostrar tareas');
+      console.log('5. Salir');
   
+      const choice = readline.question('Elige una opción: ');
+  
+      switch (choice) {
+        case '1':
+          agregar();
+          break;
+        case '2':
+          eliminar();
+          break;
+        case '3':
+          completar();
+          break;
+        case '5':
+          return;
+        default:
+          console.log('Opción no válida.');
+      }
+    }
+  }
+  
+  menu();
   
